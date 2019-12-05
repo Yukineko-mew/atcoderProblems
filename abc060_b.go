@@ -8,9 +8,8 @@ func main() {
 	var a, b, c int
 	fmt.Scanf("%d %d %d", &a, &b, &c)
 
-	for i := 1; i <= 100; i++ {
-		x := a * i
-		if x%b == c {
+	for i := 0; i < b; i++ {
+		if (a*i)%b == c {
 			fmt.Println("YES")
 			return
 		}
